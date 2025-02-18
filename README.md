@@ -1,0 +1,2 @@
+# COBOL REDEFINES Clause Data Truncation Bug
+This example demonstrates a potential data truncation bug when using the REDEFINES clause in COBOL.  The program moves a string of length 10 into WS-AREA-1.  However, because of the REDEFINES clause, this will cause data truncation in WS-SUB-1 and WS-SUB-2 when the moved value exceeds their combined length.  The solution shows how to handle the string appropriately, avoiding the truncation issue.
